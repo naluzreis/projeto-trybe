@@ -28,3 +28,30 @@ if(operacao == "+"){
 }
 
 }
+
+
+## Vezes que uma letra aparece
+Neste desafio, você deve implementar a função vezesLetraAparece, que:
+- recebe 2 parâmetros: **frase**, que deve ser uma string;
+- retorne o número de vezes que **letra** aparece na **frase**;
+
+
+### Solução 
+function vezesLetrasAparece(frase, letra){
+
+var letrasIguais = 0;
+
+for(var indice = 0; indice <= frase.length -1; indice++){
+
+    if(frase[indice] == letra){
+    
+       letrasIguais++;
+    }else{
+    
+       continue;
+    }
+    
+    return letrasIguais;
+}
+
+}
